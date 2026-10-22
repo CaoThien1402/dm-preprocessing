@@ -1,0 +1,28 @@
+# Môi trường
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Dữ liệu: không push dữ liệu thô / dữ liệu lớn lên repo
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+# Giữ lại các file kết quả số (nhỏ) để chương báo cáo tham chiếu
+!data/processed/results/
+data/processed/results/*
+!data/processed/results/*.json
+
+# Build của Jupyter Book
+book/_build/
+_build/
+
+# Thông tin đăng nhập Kaggle: TUYỆT ĐỐI không commit
+kaggle.json
+.env
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

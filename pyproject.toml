@@ -1,0 +1,60 @@
+[project]
+name = "dm-preprocessing"
+version = "0.1.0"
+description = "Đồ án Tiền xử lý dữ liệu – Khai thác dữ liệu và ứng dụng (HCMUS). Phần (a): chuỗi thời gian chứng khoán S&P 500. Phần (b): văn bản IMDB 50K."
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    # --- Xử lý dữ liệu & trực quan hóa ---
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "pyarrow>=16",
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    "tqdm>=4.66",
+    # --- Thống kê & học máy ---
+    "scipy>=1.11",
+    "scikit-learn>=1.4",
+    "statsmodels>=0.14",       # ADF, KPSS, ACF/PACF, STL, Ljung-Box, Granger
+    "arch>=7.0",               # Phillips-Perron test (statsmodels không có PP)
+    "networkx>=3.2",           # Đồ thị có hướng cho Granger causality
+    "holidays>=0.50",          # Lịch nghỉ của sàn NYSE
+    # --- Văn bản ---
+    "nltk>=3.8",
+    "wordcloud>=1.9",
+    "tokenizers>=0.19",        # BPE của HuggingFace
+    "gensim>=4.3.3",           # Word2Vec
+    "sentence-transformers>=3.0",
+    # --- Deep learning (Autoencoder 1D, Sentence Transformer) ---
+    "torch>=2.3",
+    # --- Tải dữ liệu ---
+    "kagglehub>=0.3",
+]
+
+[dependency-groups]
+dev = [
+    "jupyterlab>=4.2",
+    "ipykernel>=6.29",
+]
+book = [
+    "jupyter-book>=2.0",
+]
+
+[tool.uv]
+default-groups = ["dev", "book"]
+
+# Dùng bản PyTorch CPU (nhẹ hơn nhiều so với bản CUDA) trên Linux/Windows.
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform != 'darwin'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dmprep"]
