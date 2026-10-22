@@ -1,0 +1,8 @@
+{
+  "n_rows": 2391731,
+  "n_tickers": 500,
+  "main_ticker": "AAPL",
+  "n_obs": 5283,
+  "n_missing_trading_days": 0,
+  "acf_max_lag": 37
+}
