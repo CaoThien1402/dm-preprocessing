@@ -1,0 +1,29 @@
+# Cấu hình Jupyter Book 2 (MyST). Tài liệu: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  title: Tiền xử lý dữ liệu – Chuỗi thời gian & Văn bản
+  description: Đồ án Tiền xử lý dữ liệu, môn Khai thác dữ liệu và ứng dụng, HCMUS.
+  authors:
+    - name: Cao Tiến Thiên
+      id: "24127122"
+  github: https://github.com/CaoThien1402/dm-preprocessing
+  keywords: [data preprocessing, time series, text, S&P 500, IMDB]
+  numbering:
+    headings: false
+  toc:
+    - file: index.md
+    - title: "Phần (a): Chuỗi thời gian – S&P 500"
+      children:
+        - file: 01_ts_eda.ipynb
+        - file: 02_ts_preprocessing.ipynb
+        - file: 03_ts_features_forecast.ipynb
+    - title: "Phần (b): Văn bản – IMDB 50K"
+      children:
+        - file: 04_text_eda.ipynb
+        - file: 05_text_preprocessing.ipynb
+        - file: 06_text_representation.ipynb
+    - file: report.md
+site:
+  template: book-theme
+  options:
+    logo_text: Tiền xử lý dữ liệu
