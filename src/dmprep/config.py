@@ -57,9 +57,11 @@ TS_END = "2025-12-31"
 # Chuỗi chính dùng cho phân tích đơn biến
 TS_MAIN_TICKER = "AAPL"
 # Dataset chỉ có một cột giá đóng cửa `close` (không có `adj_close`), và cột này
-# ĐÃ được điều chỉnh chia tách và cổ tức (kiểu "Adj Close" của Yahoo): quanh các
-# lần chia tách của AAPL (7:1 ngày 09/06/2014, 4:1 ngày 31/08/2020) giá không có
-# bước nhảy giả nào (31/08/2020: +3.4%, không phải -75%).
+# ĐÃ được điều chỉnh chia tách: quanh cả 3 lần chia tách của AAPL trong giai đoạn
+# phân tích (2:1 ngày 28/02/2005, 7:1 ngày 09/06/2014, 4:1 ngày 31/08/2020) lợi
+# suất ngày lần lượt là +0.8%, +1.6%, +3.4%, không có bước nhảy giả nào (-50%,
+# -86%, -75%). Việc cột này có điều chỉnh cả cổ tức hay không KHÔNG kiểm chứng
+# được từ dữ liệu (không có giá gốc để đối chiếu), và không ảnh hưởng kết luận.
 TS_FIELD = "close"
 # Các mã dùng cho Granger causality [Nâng cao] (nhiều ngành khác nhau)
 TS_GRANGER_TICKERS = ["AAPL", "MSFT", "JPM", "XOM", "JNJ"]

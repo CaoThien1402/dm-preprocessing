@@ -16,7 +16,7 @@ Dữ liệu thô **không** được lưu trong repository. Notebook tự tải 
 
 - **Nguồn:** [S&P 500 Stocks: 25 Years of Data (Updated Daily)](https://www.kaggle.com/datasets/darkmatternet/s-and-p-500-stocks-25-years-of-data-updated-daily)
 - **Nội dung:** giá OHLCV theo ngày của 503 mã thuộc S&P 500 (thành phần *hiện tại* của chỉ số), từ 03/01/2000. Gồm 2 file: `sp500_stocks.csv` (dạng dài, cột `date, open, high, low, close, volume, symbol`) và `sp500_companies.csv` (metadata: ngành, trụ sở, ngày vào chỉ số).
-- **Giá đã điều chỉnh:** dataset chỉ có cột `close` (không có `adj_close`), và cột này đã được điều chỉnh chia tách cổ phiếu và cổ tức. Ví dụ AAPL chia 4:1 ngày 31/08/2020 nhưng giá ngày đó tăng 3.4% chứ không tụt 75%. Vì vậy đồ án dùng `TS_FIELD = "close"`.
+- **Giá đã điều chỉnh:** dataset chỉ có cột `close` (không có `adj_close`), và cột này đã được điều chỉnh chia tách cổ phiếu. Cả 3 lần chia tách của AAPL trong giai đoạn phân tích (2:1 ngày 28/02/2005, 7:1 ngày 09/06/2014, 4:1 ngày 31/08/2020) đều không tạo bước nhảy giả: lợi suất ngày lần lượt là +0.8%, +1.6%, +3.4%. Vì vậy đồ án dùng `TS_FIELD = "close"`. (Cột này có điều chỉnh cả cổ tức hay không thì không kiểm chứng được từ dữ liệu.)
 - **Sử dụng:** chuỗi giá đóng cửa của `AAPL` giai đoạn 2005–2025 (5.283 phiên) cho phân tích đơn biến; log-return của `AAPL, MSFT, JPM, XOM, JNJ` cho Granger causality.
 - **Tái lập:** dataset được cập nhật hằng ngày, nên phiên bản dataset (`SP500_VERSION = 206`, dữ liệu đến 20/10/2026) và ngày kết thúc (`TS_END = 2025-12-31`) được cố định trong [`src/dmprep/config.py`](src/dmprep/config.py).
 
