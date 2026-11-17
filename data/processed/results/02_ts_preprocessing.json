@@ -255,5 +255,25 @@
   "stl_resid_ratio_log": 0.0002799232660629292,
   "stl_seasonal_share_of_detrended": 0.1526608170369898,
   "stl_seasonal_min": -0.051358893426659606,
-  "stl_seasonal_max": 0.039240019453304846
+  "stl_seasonal_max": 0.039240019453304846,
+  "causal_stl_window": 252,
+  "leak_experiment_A": {
+    "fit trên toàn chuỗi": 0.419055,
+    "fit chỉ trên train": 0.0,
+    "STL nhân quả": 0.0
+  },
+  "leak_experiment_B": {
+    "fit chỉ trên train (hai phía trong train)": {
+      "n": 3974,
+      "Pearson r": -0.416553,
+      "p-value": 0.0
+    },
+    "STL nhân quả": {
+      "n": 3974,
+      "Pearson r": -0.035381,
+      "p-value": 0.025721
+    }
+  },
+  "causal_vs_trainfit_rms_trend": 0.023457728988644566,
+  "causal_vs_trainfit_rms_seasonal": 0.01598309702406799
 }
