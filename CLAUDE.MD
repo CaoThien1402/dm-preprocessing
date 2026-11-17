@@ -1,11 +1,11 @@
 # rule.md – Quy tắc làm việc cho Agent trong đồ án Tiền xử lý dữ liệu
 
 > **Đọc toàn bộ file này trước khi làm bất kỳ việc gì trong repo.**
-> Thứ tự ưu tiên khi có mâu thuẫn: **(1) đề bài gốc** → **(2) rule.md** → **(3) yêu cầu trong prompt**.
+> Thứ tự ưu tiên khi có mâu thuẫn: **(1) đề bài gốc** → **(2) Claude.md** → **(3) yêu cầu trong prompt**.
 > Khi có điểm chưa rõ hoặc một quyết định ảnh hưởng đến điểm số, **dừng lại và hỏi sinh viên**, không tự đoán.
 
 - Đề bài gốc: https://hcmus-cs-ta.github.io/lab-book/data-mining/projects/preprocessing/
-- Hạn nộp: **23:59 thứ Bảy 14/11/2026** (giờ Việt Nam). **Không chấp nhận nộp trễ.**
+- Hạn nộp: **23:59 thứ Bảy 05/12/2026** (giờ Việt Nam; thầy đã dời từ 14/11/2026). **Không chấp nhận nộp trễ.**
 - Phạm vi đã chọn: **Phần (a) = Chuỗi thời gian** (S&P 500), **Phần (b) = Văn bản** (IMDB 50K). Không làm phần dữ liệu bảng hay ảnh.
 
 ---
@@ -100,7 +100,8 @@ Phân tích **so sánh** giữa các kỹ thuật, thảo luận, nhận xét ph
 - Commit **nhỏ, thường xuyên**, message rõ ràng (ví dụ `feat(ch2): add stationarity tests ADF/KPSS/PP`). Không gộp cả tuần làm việc vào một commit.
 - **Không bao giờ commit:** `data/raw/*`, file parquet lớn, `kaggle.json`, `.env`, token hay mật khẩu.
 - **Không** `push --force`, không viết lại lịch sử, không xóa nhánh.
-- **Phải hỏi sinh viên trước khi:** tạo repo GitHub, push, đổi cài đặt GitHub Pages, xóa file, thêm thư viện mới, đổi bộ dữ liệu hoặc đổi cấu trúc chương.
+- **Quy trình đã thống nhất với sinh viên (17/11/2026):** commit nhỏ theo từng mục kỹ thuật (mỗi commit là một trạng thái notebook đã chạy được, không lỗi) và **push thẳng lên `main`, không dùng PR**. Việc này thay cho "hỏi trước khi push" chỉ với `git push` thường lên `main`.
+- **Vẫn phải hỏi sinh viên trước khi:** tạo repo GitHub, đổi cài đặt GitHub Pages, xóa file, thêm thư viện mới, đổi bộ dữ liệu hoặc đổi cấu trúc chương.
 - Sau mỗi lần push, kiểm tra workflow `deploy.yml` thành công và link Pages mở được.
 
 ## 9. Trung thực học thuật
@@ -129,7 +130,7 @@ Một chương chỉ được coi là xong khi:
 - [ ] Phân tích trích đúng con số thật
 - [ ] Đã commit
 
-Trước khi nộp (muộn nhất ngày 12/11/2026, chừa 2 ngày dự phòng):
+Trước khi nộp (muộn nhất ngày 03/12/2026, chừa 2 ngày dự phòng):
 
 - [ ] Clone repo vào thư mục mới, `uv sync`, chạy lại toàn bộ notebook, build book: không lỗi
 - [ ] Link GitHub Pages mở được, đủ 7 chương, mục lục đúng
