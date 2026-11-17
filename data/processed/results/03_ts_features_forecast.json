@@ -1,1 +1,31 @@
-{}
+{
+  "n_train": 4226,
+  "n_test": 1057,
+  "train_end": "2021-10-14",
+  "holiday_effect": {
+    "sau ngày lễ": {
+      "n": 151,
+      "mean (%)": 0.41031,
+      "CI95 ±(%)": 0.34578,
+      "U": 319458.0,
+      "p-value": 0.10085,
+      "rank-biserial": 0.07857
+    },
+    "trước ngày lễ": {
+      "n": 151,
+      "mean (%)": 0.18207,
+      "CI95 ±(%)": 0.23315,
+      "U": 297662.0,
+      "p-value": 0.91717,
+      "rank-biserial": 0.00498
+    },
+    "khác (đối chứng)": {
+      "n": 3923,
+      "mean (%)": 0.10461,
+      "CI95 ±(%)": 0.06569,
+      "U": NaN,
+      "p-value": NaN,
+      "rank-biserial": NaN
+    }
+  }
+}
