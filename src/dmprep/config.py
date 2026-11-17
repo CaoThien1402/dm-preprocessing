@@ -66,6 +66,18 @@ TS_FIELD = "close"
 # Các mã dùng cho Granger causality [Nâng cao] (nhiều ngành khác nhau)
 TS_GRANGER_TICKERS = ["AAPL", "MSFT", "JPM", "XOM", "JNJ"]
 
+# Chia train/test THEO THỜI GIAN (không xáo trộn): 80% phiên đầu là train, 20% phiên cuối là test.
+# Mọi bước học tham số của phần (a) (chu kỳ STL, số lag p, scaler, mô hình) chỉ được dùng tập train.
+TS_TEST_FRAC = 0.2
+# Cửa sổ cuốn chiếu (số phiên, khoảng 1 năm) của STL nhân quả ở chương 2: thành phần tại ngày t
+# chỉ được tính từ TS_STL_WINDOW phiên kết thúc tại t.
+TS_STL_WINDOW = 252
+
+
+def ts_split_index(n: int) -> int:
+    """Chỉ số của phiên test đầu tiên: train = [0, idx), test = [idx, n)."""
+    return int(n * (1 - TS_TEST_FRAC))
+
 # ---------------------------------------------------------------------------
 # Phần (b): văn bản IMDB
 # ---------------------------------------------------------------------------
