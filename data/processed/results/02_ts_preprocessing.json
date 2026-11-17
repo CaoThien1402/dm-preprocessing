@@ -1,3 +1,82 @@
 {
-  "gap_n_masked": 264
+  "gap_n_masked": 264,
+  "gap_pandas_poly3_vs_cubicspline_maxdiff": 5.684341886080802e-14,
+  "gap_table": {
+    "ffill": {
+      "MAE": 0.750958,
+      "RMSE": 1.607117,
+      "MAPE_%": 1.520806,
+      "LB_stat": 28.725051,
+      "LB_pvalue": 0.00138
+    },
+    "linear": {
+      "MAE": 0.559521,
+      "RMSE": 1.119784,
+      "MAPE_%": 1.044081,
+      "LB_stat": 27.872968,
+      "LB_pvalue": 0.001892
+    },
+    "poly2": {
+      "MAE": 0.566448,
+      "RMSE": 1.167306,
+      "MAPE_%": 1.120457,
+      "LB_stat": 32.133629,
+      "LB_pvalue": 0.00038
+    },
+    "poly3": {
+      "MAE": 0.5345,
+      "RMSE": 1.115602,
+      "MAPE_%": 1.092324,
+      "LB_stat": 31.298436,
+      "LB_pvalue": 0.000524
+    },
+    "cubic_spline": {
+      "MAE": 0.536748,
+      "RMSE": 1.147506,
+      "MAPE_%": 1.082908,
+      "LB_stat": 32.36322,
+      "LB_pvalue": 0.000348
+    },
+    "(chuỗi gốc, không xóa)": {
+      "MAE": NaN,
+      "RMSE": NaN,
+      "MAPE_%": NaN,
+      "LB_stat": 34.915083,
+      "LB_pvalue": 0.000129
+    }
+  },
+  "gap_repeat_summary": {
+    "MAE_mean": {
+      "ffill": 0.7639,
+      "linear": 0.54299,
+      "poly2": 0.62363,
+      "poly3": 0.60263,
+      "cubic_spline": 0.6101
+    },
+    "MAE_std": {
+      "ffill": 0.08534,
+      "linear": 0.06439,
+      "poly2": 0.08464,
+      "poly3": 0.08698,
+      "cubic_spline": 0.06706
+    },
+    "RMSE_mean": {
+      "ffill": 1.606,
+      "linear": 1.13064,
+      "poly2": 1.29809,
+      "poly3": 1.27161,
+      "cubic_spline": 1.26633
+    },
+    "RMSE_std": {
+      "ffill": 0.26107,
+      "linear": 0.17291,
+      "poly2": 0.25196,
+      "poly3": 0.28934,
+      "cubic_spline": 0.21533
+    }
+  },
+  "gap_repeat_best_mae_counts": {
+    "linear": 29,
+    "poly2": 1
+  }
 }
