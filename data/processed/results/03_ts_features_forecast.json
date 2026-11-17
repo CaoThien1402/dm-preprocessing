@@ -27,5 +27,152 @@
       "p-value": NaN,
       "rank-biserial": NaN
     }
+  },
+  "shock_z_endpoint_vs_delayed": {
+    "2008-09-29": {
+      "log_return_pct": -19.747,
+      "z_endpoint": -3.01,
+      "z_delayed": -8.253
+    },
+    "2013-01-24": {
+      "log_return_pct": -13.188,
+      "z_endpoint": -5.681,
+      "z_delayed": -3.583
+    },
+    "2020-03-16": {
+      "log_return_pct": -13.771,
+      "z_endpoint": -1.632,
+      "z_delayed": -4.299
+    },
+    "2025-04-09": {
+      "log_return_pct": 14.262,
+      "z_endpoint": 0.038,
+      "z_delayed": 8.132
+    }
+  },
+  "resid_mad_sigma": 0.009205513997102397,
+  "resid_std": 0.023157670702100015,
+  "resid_excess_kurtosis_train": 7.4147039495854346,
+  "resid_mad_rule_counts": {
+    "k = 3": 765,
+    "k = 5": 356,
+    "k = 8": 99
+  },
+  "anomaly_summary": {
+    "Z-score": {
+      "tổng": 72,
+      "train": 63,
+      "test": 9,
+      "% ngày xét": 1.4311
+    },
+    "Isolation Forest": {
+      "tổng": 45,
+      "train": 40,
+      "test": 5,
+      "% ngày xét": 0.8945
+    },
+    "STL residual": {
+      "tổng": 127,
+      "train": 104,
+      "test": 23,
+      "% ngày xét": 2.5243
+    }
+  },
+  "anomaly_jaccard": {
+    "Z-score": {
+      "Z-score": 1.0,
+      "Isolation Forest": 0.2062,
+      "STL residual": 0.1916
+    },
+    "Isolation Forest": {
+      "Z-score": 0.2062,
+      "Isolation Forest": 1.0,
+      "STL residual": 0.0886
+    },
+    "STL residual": {
+      "Z-score": 0.1916,
+      "Isolation Forest": 0.0886,
+      "STL residual": 1.0
+    }
+  },
+  "anomaly_expected_if_normal": 13.582673994261999,
+  "anomaly_consensus": {
+    "≥ 2 phương pháp": 46,
+    "cả 3 phương pháp": 10
+  },
+  "anomaly_top10_coverage": {
+    "Z-score": 9,
+    "Isolation Forest": 6,
+    "STL residual": 5
+  },
+  "anomaly_n_days": 5031,
+  "anomaly_params": {
+    "z_threshold": 3,
+    "if_window": 10,
+    "if_contamination": 0.01,
+    "resid_k_sigma": 3,
+    "stl_lag_alert": 5
+  },
+  "anomaly_top_events": {
+    "2008-09-29": {
+      "log_return_pct": -19.747,
+      "n_methods": 3
+    },
+    "2025-04-09": {
+      "log_return_pct": 14.262,
+      "n_methods": 2
+    },
+    "2020-03-16": {
+      "log_return_pct": -13.771,
+      "n_methods": 2
+    },
+    "2008-10-13": {
+      "log_return_pct": 13.019,
+      "n_methods": 3
+    },
+    "2008-11-24": {
+      "log_return_pct": 11.829,
+      "n_methods": 2
+    },
+    "2020-03-13": {
+      "log_return_pct": 11.316,
+      "n_methods": 3
+    },
+    "2006-07-20": {
+      "log_return_pct": 11.181,
+      "n_methods": 2
+    },
+    "2019-01-03": {
+      "log_return_pct": -10.492,
+      "n_methods": 2
+    },
+    "2020-03-12": {
+      "log_return_pct": -10.398,
+      "n_methods": 3
+    },
+    "2008-10-07": {
+      "log_return_pct": -9.596,
+      "n_methods": 3
+    },
+    "2020-03-24": {
+      "log_return_pct": 9.561,
+      "n_methods": 2
+    },
+    "2008-09-17": {
+      "log_return_pct": -9.008,
+      "n_methods": 2
+    },
+    "2008-10-10": {
+      "log_return_pct": 8.694,
+      "n_methods": 2
+    },
+    "2008-10-02": {
+      "log_return_pct": -8.628,
+      "n_methods": 2
+    },
+    "2008-09-30": {
+      "log_return_pct": 7.678,
+      "n_methods": 2
+    }
   }
 }
