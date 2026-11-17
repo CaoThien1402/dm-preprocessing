@@ -78,5 +78,112 @@
   "gap_repeat_best_mae_counts": {
     "linear": 29,
     "poly2": 1
+  },
+  "boxcox_lambda": 0.05501079771196756,
+  "stationarity": {
+    "original": {
+      "ADF_stat": 1.900991,
+      "ADF_p": 0.99853,
+      "KPSS_stat": 9.547775,
+      "KPSS_p": 0.01,
+      "PP_stat": 1.908509,
+      "PP_p": 0.998542,
+      "kết luận": "Không dừng"
+    },
+    "log": {
+      "ADF_stat": -1.252105,
+      "ADF_p": 0.65079,
+      "KPSS_stat": 11.764806,
+      "KPSS_p": 0.01,
+      "PP_stat": -1.411804,
+      "PP_p": 0.576604,
+      "kết luận": "Không dừng"
+    },
+    "boxcox": {
+      "ADF_stat": -0.898657,
+      "ADF_p": 0.788414,
+      "KPSS_stat": 11.806832,
+      "KPSS_p": 0.01,
+      "PP_stat": -1.024431,
+      "PP_p": 0.74425,
+      "kết luận": "Không dừng"
+    },
+    "diff1": {
+      "ADF_stat": -12.783936,
+      "ADF_p": 0.0,
+      "KPSS_stat": 0.615921,
+      "KPSS_p": 0.021189,
+      "PP_stat": -71.464921,
+      "PP_p": 0.0,
+      "kết luận": "Mâu thuẫn"
+    },
+    "diff2": {
+      "ADF_stat": -21.706251,
+      "ADF_p": 0.0,
+      "KPSS_stat": 0.170845,
+      "KPSS_p": 0.1,
+      "PP_stat": -427.065818,
+      "PP_p": 0.0,
+      "kết luận": "Dừng"
+    },
+    "log_diff1": {
+      "ADF_stat": -17.326567,
+      "ADF_p": 0.0,
+      "KPSS_stat": 0.101321,
+      "KPSS_p": 0.1,
+      "PP_stat": -74.206837,
+      "PP_p": 0.0,
+      "kết luận": "Dừng"
+    },
+    "boxcox_diff1": {
+      "ADF_stat": -17.440231,
+      "ADF_p": 0.0,
+      "KPSS_stat": 0.053097,
+      "KPSS_p": 0.1,
+      "PP_stat": -74.391268,
+      "PP_p": 0.0,
+      "kết luận": "Dừng"
+    },
+    "original (ct)": {
+      "ADF_stat": -0.434764,
+      "ADF_p": 0.985784,
+      "KPSS_stat": 2.639491,
+      "KPSS_p": 0.01,
+      "PP_stat": -0.476732,
+      "PP_p": 0.984319,
+      "kết luận": "Không dừng"
+    },
+    "log (ct)": {
+      "ADF_stat": -3.521012,
+      "ADF_p": 0.037196,
+      "KPSS_stat": 0.522844,
+      "KPSS_p": 0.01,
+      "PP_stat": -3.708399,
+      "PP_p": 0.02181,
+      "kết luận": "Mâu thuẫn"
+    },
+    "boxcox (ct)": {
+      "ADF_stat": -3.504348,
+      "ADF_p": 0.038928,
+      "KPSS_stat": 0.382254,
+      "KPSS_p": 0.01,
+      "PP_stat": -3.652585,
+      "PP_p": 0.025676,
+      "kết luận": "Mâu thuẫn"
+    }
+  },
+  "stationarity_diagnostics": {
+    "diff1": {
+      "ACF lag 1": 0.0189,
+      "std nửa sau / nửa đầu": 11.6249
+    },
+    "diff2": {
+      "ACF lag 1": -0.5003,
+      "std nửa sau / nửa đầu": 11.5399
+    },
+    "log_diff1": {
+      "ACF lag 1": -0.0211,
+      "std nửa sau / nửa đầu": 0.8308
+    }
   }
 }
