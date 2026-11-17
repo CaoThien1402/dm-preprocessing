@@ -391,5 +391,419 @@
       "DM t-stat": 10.389975,
       "DM p-value": 0.0
     }
+  },
+  "granger_lag": 1,
+  "granger_ic_orders": {
+    "aic": 9,
+    "bic": 0,
+    "hqic": 1,
+    "fpe": 9
+  },
+  "granger_adf_p": {
+    "AAPL": 7.5653143749342295e-28,
+    "MSFT": 3.3937688595020917e-25,
+    "JPM": 3.72101881332226e-23,
+    "XOM": 6.854741773273999e-27,
+    "JNJ": 7.695288650278959e-30
+  },
+  "granger_p_F": {
+    "AAPL": {
+      "AAPL": NaN,
+      "MSFT": 0.000454,
+      "JPM": 0.003515,
+      "XOM": 0.015236,
+      "JNJ": 2.6e-05
+    },
+    "MSFT": {
+      "AAPL": 0.001147,
+      "MSFT": NaN,
+      "JPM": 0.022497,
+      "XOM": 0.000504,
+      "JNJ": 0.0
+    },
+    "JPM": {
+      "AAPL": 0.001461,
+      "MSFT": 0.0,
+      "JPM": NaN,
+      "XOM": 0.000269,
+      "JNJ": 1.2e-05
+    },
+    "XOM": {
+      "AAPL": 0.0,
+      "MSFT": 0.0,
+      "JPM": 0.006702,
+      "XOM": NaN,
+      "JNJ": 0.0
+    },
+    "JNJ": {
+      "AAPL": 0.001396,
+      "MSFT": 0.001057,
+      "JPM": 0.069963,
+      "XOM": 0.00014,
+      "JNJ": NaN
+    }
+  },
+  "granger_p_HC3": {
+    "AAPL": {
+      "AAPL": NaN,
+      "MSFT": 0.026575,
+      "JPM": 0.046495,
+      "XOM": 0.161164,
+      "JNJ": 0.010571
+    },
+    "MSFT": {
+      "AAPL": 0.048383,
+      "MSFT": NaN,
+      "JPM": 0.246335,
+      "XOM": 0.03193,
+      "JNJ": 0.00187
+    },
+    "JPM": {
+      "AAPL": 0.083049,
+      "MSFT": 0.022862,
+      "JPM": NaN,
+      "XOM": 0.083187,
+      "JNJ": 0.03086
+    },
+    "XOM": {
+      "AAPL": 0.000553,
+      "MSFT": 0.001389,
+      "JPM": 0.197058,
+      "XOM": NaN,
+      "JNJ": 0.006226
+    },
+    "JNJ": {
+      "AAPL": 0.068127,
+      "MSFT": 0.056539,
+      "JPM": 0.388862,
+      "XOM": 0.054114,
+      "JNJ": NaN
+    }
+  },
+  "granger_p_bh_F": {
+    "AAPL": {
+      "AAPL": NaN,
+      "MSFT": 0.000908,
+      "JPM": 0.004393,
+      "XOM": 0.016929,
+      "JNJ": 7.4e-05
+    },
+    "MSFT": {
+      "AAPL": 0.001764,
+      "MSFT": NaN,
+      "JPM": 0.023681,
+      "XOM": 0.000917,
+      "JNJ": 1e-06
+    },
+    "JPM": {
+      "AAPL": 0.001947,
+      "MSFT": 1e-06,
+      "JPM": NaN,
+      "XOM": 0.000598,
+      "JNJ": 4e-05
+    },
+    "XOM": {
+      "AAPL": 0.0,
+      "MSFT": 1e-06,
+      "JPM": 0.007885,
+      "XOM": NaN,
+      "JNJ": 1e-06
+    },
+    "JNJ": {
+      "AAPL": 0.001947,
+      "MSFT": 0.001762,
+      "JPM": 0.069963,
+      "XOM": 0.000349,
+      "JNJ": NaN
+    }
+  },
+  "granger_p_bh_HC3": {
+    "AAPL": {
+      "AAPL": NaN,
+      "MSFT": 0.070956,
+      "JPM": 0.086982,
+      "XOM": 0.189604,
+      "JNJ": 0.042284
+    },
+    "MSFT": {
+      "AAPL": 0.086982,
+      "MSFT": NaN,
+      "JPM": 0.2593,
+      "XOM": 0.070956,
+      "JNJ": 0.012464
+    },
+    "JPM": {
+      "AAPL": 0.103983,
+      "MSFT": 0.070956,
+      "JPM": NaN,
+      "XOM": 0.103983,
+      "JNJ": 0.070956
+    },
+    "XOM": {
+      "AAPL": 0.011062,
+      "MSFT": 0.012464,
+      "JPM": 0.218954,
+      "XOM": NaN,
+      "JNJ": 0.03113
+    },
+    "JNJ": {
+      "AAPL": 0.097324,
+      "MSFT": 0.086982,
+      "JPM": 0.388862,
+      "XOM": 0.086982,
+      "JNJ": NaN
+    }
+  },
+  "granger_p_bonferroni_HC3": {
+    "AAPL": {
+      "AAPL": NaN,
+      "MSFT": 0.531496,
+      "JPM": 0.929908,
+      "XOM": 1.0,
+      "JNJ": 0.211419
+    },
+    "MSFT": {
+      "AAPL": 0.967661,
+      "MSFT": NaN,
+      "JPM": 1.0,
+      "XOM": 0.638605,
+      "JNJ": 0.037391
+    },
+    "JPM": {
+      "AAPL": 1.0,
+      "MSFT": 0.457241,
+      "JPM": NaN,
+      "XOM": 1.0,
+      "JNJ": 0.617206
+    },
+    "XOM": {
+      "AAPL": 0.011062,
+      "MSFT": 0.027778,
+      "JPM": 1.0,
+      "XOM": NaN,
+      "JNJ": 0.124518
+    },
+    "JNJ": {
+      "AAPL": 1.0,
+      "MSFT": 1.0,
+      "JPM": 1.0,
+      "XOM": 1.0,
+      "JNJ": NaN
+    }
+  },
+  "granger_F": {
+    "AAPL": {
+      "AAPL": NaN,
+      "MSFT": 12.3154,
+      "JPM": 8.5285,
+      "XOM": 5.8938,
+      "JNJ": 17.7345
+    },
+    "MSFT": {
+      "AAPL": 10.5888,
+      "MSFT": NaN,
+      "JPM": 5.2107,
+      "XOM": 12.1179,
+      "JNJ": 26.1237
+    },
+    "JPM": {
+      "AAPL": 10.141,
+      "MSFT": 26.8001,
+      "JPM": NaN,
+      "XOM": 13.2958,
+      "JNJ": 19.1868
+    },
+    "XOM": {
+      "AAPL": 32.6155,
+      "MSFT": 29.0949,
+      "JPM": 7.3584,
+      "XOM": NaN,
+      "JNJ": 26.8943
+    },
+    "JNJ": {
+      "AAPL": 10.2246,
+      "MSFT": 10.7395,
+      "JPM": 3.2855,
+      "XOM": 14.5322,
+      "JNJ": NaN
+    }
+  },
+  "granger_partial_r2_pct": {
+    "AAPL": {
+      "AAPL": NaN,
+      "MSFT": 0.29092,
+      "JPM": 0.20164,
+      "XOM": 0.13943,
+      "JNJ": 0.41839
+    },
+    "MSFT": {
+      "AAPL": 0.25023,
+      "MSFT": NaN,
+      "JPM": 0.1233,
+      "XOM": 0.28626,
+      "JNJ": 0.61509
+    },
+    "JPM": {
+      "AAPL": 0.23968,
+      "MSFT": 0.63092,
+      "JPM": NaN,
+      "XOM": 0.314,
+      "JNJ": 0.4525
+    },
+    "XOM": {
+      "AAPL": 0.76677,
+      "MSFT": 0.68457,
+      "JPM": 0.17403,
+      "XOM": NaN,
+      "JNJ": 0.63312
+    },
+    "JNJ": {
+      "AAPL": 0.24165,
+      "MSFT": 0.25378,
+      "JPM": 0.07778,
+      "XOM": 0.3431,
+      "JNJ": NaN
+    }
+  },
+  "granger_counts": {
+    "p thô < 0.05": {
+      "F cổ điển": 19,
+      "Wald HC3 (bền vững)": 11
+    },
+    "Bonferroni < 0.05": {
+      "F cổ điển": 15,
+      "Wald HC3 (bền vững)": 3
+    },
+    "BH (FDR) < 0.05": {
+      "F cổ điển": 19,
+      "Wald HC3 (bền vững)": 5
+    }
+  },
+  "granger_max_partial_r2_pct": 0.7667709741763793,
+  "granger_edges": {
+    "F cổ điển": [
+      [
+        "AAPL",
+        "MSFT",
+        3.042
+      ],
+      [
+        "AAPL",
+        "JPM",
+        2.357
+      ],
+      [
+        "AAPL",
+        "XOM",
+        1.771
+      ],
+      [
+        "AAPL",
+        "JNJ",
+        4.13
+      ],
+      [
+        "MSFT",
+        "AAPL",
+        2.753
+      ],
+      [
+        "MSFT",
+        "JPM",
+        1.626
+      ],
+      [
+        "MSFT",
+        "XOM",
+        3.038
+      ],
+      [
+        "MSFT",
+        "JNJ",
+        5.874
+      ],
+      [
+        "JPM",
+        "AAPL",
+        2.711
+      ],
+      [
+        "JPM",
+        "MSFT",
+        5.928
+      ],
+      [
+        "JPM",
+        "XOM",
+        3.223
+      ],
+      [
+        "JPM",
+        "JNJ",
+        4.393
+      ],
+      [
+        "XOM",
+        "AAPL",
+        6.62
+      ],
+      [
+        "XOM",
+        "MSFT",
+        6.139
+      ],
+      [
+        "XOM",
+        "JPM",
+        2.103
+      ],
+      [
+        "XOM",
+        "JNJ",
+        5.928
+      ],
+      [
+        "JNJ",
+        "AAPL",
+        2.711
+      ],
+      [
+        "JNJ",
+        "MSFT",
+        2.754
+      ],
+      [
+        "JNJ",
+        "XOM",
+        3.457
+      ]
+    ],
+    "Wald HC3 (bền vững)": [
+      [
+        "AAPL",
+        "JNJ",
+        1.374
+      ],
+      [
+        "MSFT",
+        "JNJ",
+        1.904
+      ],
+      [
+        "XOM",
+        "AAPL",
+        1.956
+      ],
+      [
+        "XOM",
+        "MSFT",
+        1.904
+      ],
+      [
+        "XOM",
+        "JNJ",
+        1.507
+      ]
+    ]
   }
 }
