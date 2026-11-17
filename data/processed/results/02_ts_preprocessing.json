@@ -185,5 +185,75 @@
       "ACF lag 1": -0.0211,
       "std nửa sau / nửa đầu": 0.8308
     }
-  }
+  },
+  "n_train": 4226,
+  "n_test": 1057,
+  "train_end": "2021-10-14",
+  "period_selection": {
+    "tuần (5)": {
+      "F_S quan sát": 0.31972,
+      "null: trung bình": 0.29891,
+      "null: phân vị 95%": 0.31721,
+      "p hoán vị": 0.05882
+    },
+    "tháng (21)": {
+      "F_S quan sát": 0.31213,
+      "null: trung bình": 0.31535,
+      "null: phân vị 95%": 0.35047,
+      "p hoán vị": 0.56863
+    },
+    "quý (63)": {
+      "F_S quan sát": 0.29395,
+      "null: trung bình": 0.32274,
+      "null: phân vị 95%": 0.3872,
+      "p hoán vị": 0.90196
+    },
+    "năm (252)": {
+      "F_S quan sát": 0.3495,
+      "null: trung bình": 0.34026,
+      "null: phân vị 95%": 0.4586,
+      "p hoán vị": 0.47059
+    }
+  },
+  "decomposition_compare": {
+    "period_5": {
+      "additive": {
+        "ρ_y": 0.000252,
+        "ρ_dt": 0.99895,
+        "biên độ mùa vụ tối đa / giá (2 năm đầu)": 0.025758
+      },
+      "multiplicative": {
+        "ρ_y": 0.000252,
+        "ρ_dt": 0.997031,
+        "biên độ mùa vụ tối đa / giá (2 năm đầu)": 0.000551
+      },
+      "STL (log)": {
+        "ρ_y": 0.000567,
+        "ρ_dt": 0.992442,
+        "biên độ mùa vụ tối đa / giá (2 năm đầu)": 0.050062
+      }
+    },
+    "period_252": {
+      "additive": {
+        "ρ_y": 0.01336,
+        "ρ_dt": 0.936206,
+        "biên độ mùa vụ tối đa / giá (2 năm đầu)": 1.628321
+      },
+      "multiplicative": {
+        "ρ_y": 0.012579,
+        "ρ_dt": 0.881515,
+        "biên độ mùa vụ tối đa / giá (2 năm đầu)": 0.055095
+      },
+      "STL (log)": {
+        "ρ_y": 0.012763,
+        "ρ_dt": 0.718921,
+        "biên độ mùa vụ tối đa / giá (2 năm đầu)": 0.360051
+      }
+    }
+  },
+  "stl_period": 5,
+  "stl_resid_ratio_log": 0.0002799232660629292,
+  "stl_seasonal_share_of_detrended": 0.1526608170369898,
+  "stl_seasonal_min": -0.051358893426659606,
+  "stl_seasonal_max": 0.039240019453304846
 }
