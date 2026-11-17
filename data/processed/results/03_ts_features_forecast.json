@@ -174,5 +174,222 @@
       "log_return_pct": 7.678,
       "n_methods": 2
     }
+  },
+  "pacf_train_sig_lags": [
+    4,
+    6,
+    7,
+    8,
+    12,
+    16
+  ],
+  "p_lags": 16,
+  "n_features": 41,
+  "n_train_rows": 3969,
+  "n_test_rows": 1057,
+  "feature_groups": {
+    "lag": 16,
+    "cửa sổ trượt": 15,
+    "thời gian": 6,
+    "phân rã STL": 4
+  },
+  "leak_test_cells_changed": 0,
+  "spearman_n_sig": 7,
+  "spearman_max_abs": 0.052608135429378346,
+  "spearman_top": {
+    "dow_sin": {
+      "rho": 0.05261,
+      "p": 0.00091
+    },
+    "ret_lag4": {
+      "rho": 0.04701,
+      "p": 0.00305
+    },
+    "dow_cos": {
+      "rho": 0.04206,
+      "p": 0.00804
+    },
+    "ret_lag8": {
+      "rho": -0.03738,
+      "p": 0.01852
+    },
+    "roll5_mean": {
+      "rho": 0.03713,
+      "p": 0.01932
+    },
+    "roll21_mean": {
+      "rho": 0.03458,
+      "p": 0.02939
+    },
+    "month_cos": {
+      "rho": -0.03374,
+      "p": 0.03352
+    },
+    "stl_trend_slope5": {
+      "rho": 0.03056,
+      "p": 0.05422
+    }
+  },
+  "cv_table": {
+    "1": {
+      "RMSE CV (log-return)": 0.019581,
+      "độ lệch chuẩn": 0.003733
+    },
+    "10": {
+      "RMSE CV (log-return)": 0.019258,
+      "độ lệch chuẩn": 0.003734
+    },
+    "50": {
+      "RMSE CV (log-return)": 0.01922,
+      "độ lệch chuẩn": 0.003809
+    }
+  },
+  "cv_naive_rmse": 0.01923978169812977,
+  "best_min_samples_leaf": 50,
+  "test_table": {
+    "naive (r̂ = 0)": {
+      "MAE log-return": 0.012569,
+      "RMSE log-return": 0.017798,
+      "MAE (USD)": 2.280792,
+      "RMSE (USD)": 3.226255,
+      "R2_oos": 0.0,
+      "đúng chiều": NaN
+    },
+    "drift (trung bình train)": {
+      "MAE log-return": 0.012535,
+      "RMSE log-return": 0.017792,
+      "MAE (USD)": 2.274739,
+      "RMSE (USD)": 3.225856,
+      "R2_oos": 0.000686,
+      "đúng chiều": 0.53264
+    },
+    "RF: lag": {
+      "MAE log-return": 0.012664,
+      "RMSE log-return": 0.017867,
+      "MAE (USD)": 2.296276,
+      "RMSE (USD)": 3.240552,
+      "R2_oos": -0.007812,
+      "đúng chiều": 0.512772
+    },
+    "RF: + cửa sổ trượt": {
+      "MAE log-return": 0.01264,
+      "RMSE log-return": 0.017799,
+      "MAE (USD)": 2.291703,
+      "RMSE (USD)": 3.228181,
+      "R2_oos": -0.000118,
+      "đúng chiều": 0.518448
+    },
+    "RF: + thời gian": {
+      "MAE log-return": 0.012624,
+      "RMSE log-return": 0.017787,
+      "MAE (USD)": 2.288047,
+      "RMSE (USD)": 3.223611,
+      "R2_oos": 0.001176,
+      "đúng chiều": 0.517502
+    },
+    "RF: + phân rã STL": {
+      "MAE log-return": 0.012592,
+      "RMSE log-return": 0.017758,
+      "MAE (USD)": 2.282312,
+      "RMSE (USD)": 3.217924,
+      "R2_oos": 0.004444,
+      "đúng chiều": 0.516556
+    }
+  },
+  "dm_table": {
+    "drift (trung bình train)": {
+      "DM t-stat": 0.193561,
+      "p-value": 0.84652
+    },
+    "RF: lag": {
+      "DM t-stat": -0.890322,
+      "p-value": 0.373293
+    },
+    "RF: + cửa sổ trượt": {
+      "DM t-stat": -0.014946,
+      "p-value": 0.988075
+    },
+    "RF: + thời gian": {
+      "DM t-stat": 0.15403,
+      "p-value": 0.877586
+    },
+    "RF: + phân rã STL": {
+      "DM t-stat": 0.48744,
+      "p-value": 0.625947
+    }
+  },
+  "rf_mae": 2.282312362440521,
+  "rf_rmse": 3.2179240066430017,
+  "naive_mae": 2.280791788813971,
+  "naive_rmse": 3.2262547278199083,
+  "importance_top": {
+    "ret_lag7": {
+      "MDI": 0.052596,
+      "hoán vị (test), ×1e-6 MSE": -0.593259
+    },
+    "roll5_mean": {
+      "MDI": 0.046383,
+      "hoán vị (test), ×1e-6 MSE": 0.45842
+    },
+    "ret_lag8": {
+      "MDI": 0.038462,
+      "hoán vị (test), ×1e-6 MSE": 1.347168
+    },
+    "ret_lag6": {
+      "MDI": 0.038123,
+      "hoán vị (test), ×1e-6 MSE": 0.156787
+    },
+    "ret_lag4": {
+      "MDI": 0.03678,
+      "hoán vị (test), ×1e-6 MSE": -0.289831
+    },
+    "ret_lag1": {
+      "MDI": 0.035672,
+      "hoán vị (test), ×1e-6 MSE": -0.111707
+    },
+    "stl_seasonal": {
+      "MDI": 0.035226,
+      "hoán vị (test), ×1e-6 MSE": 0.256031
+    },
+    "stl_detrended": {
+      "MDI": 0.034381,
+      "hoán vị (test), ×1e-6 MSE": 0.05242
+    },
+    "roll63_std": {
+      "MDI": 0.033166,
+      "hoán vị (test), ×1e-6 MSE": -0.034962
+    },
+    "roll5_min": {
+      "MDI": 0.03205,
+      "hoán vị (test), ×1e-6 MSE": 0.153514
+    }
+  },
+  "mdi_by_group": {
+    "cửa sổ trượt": 0.36042,
+    "lag": 0.48496,
+    "phân rã STL": 0.1138,
+    "thời gian": 0.04082
+  },
+  "leaky_demo": {
+    "STL nhân quả (đúng)": {
+      "MAE log-return": 0.012592,
+      "RMSE log-return": 0.017758,
+      "MAE (USD)": 2.282312,
+      "RMSE (USD)": 3.217924,
+      "R2_oos": 0.004444,
+      "đúng chiều": 0.516556,
+      "DM t-stat": 0.48744,
+      "DM p-value": 0.625947
+    },
+    "STL hai phía toàn chuỗi (rò rỉ)": {
+      "MAE log-return": 0.010069,
+      "RMSE log-return": 0.014921,
+      "MAE (USD)": 1.813101,
+      "RMSE (USD)": 2.682654,
+      "R2_oos": 0.297174,
+      "đúng chiều": 0.723746,
+      "DM t-stat": 10.389975,
+      "DM p-value": 0.0
+    }
   }
 }
