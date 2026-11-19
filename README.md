@@ -23,7 +23,7 @@ Dữ liệu thô **không** được lưu trong repository. Notebook tự tải 
 ### Phần (b): Văn bản – IMDB 50K
 
 - **Nguồn:** [IMDB Dataset of 50K Movie Reviews](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
-- **Nội dung:** 50.000 review phim tiếng Anh, 2 nhãn `positive` / `negative` (cân bằng 25.000 / 25.000), một file `IMDB Dataset.csv` với 2 cột `review, sentiment`. Có 418 review trùng lặp, được loại bỏ trước khi chia train/test ở chương 4.
+- **Nội dung:** 50.000 review phim tiếng Anh, 2 nhãn `positive` / `negative` (cân bằng 25.000 / 25.000), một file `IMDB Dataset.csv` với 2 cột `review, sentiment`. Có 418 review trùng chính xác (422 nếu so theo khóa chuẩn hóa: bỏ thẻ HTML, chữ thường, gộp khoảng trắng), không có nhãn mâu thuẫn; chúng được loại bỏ trước khi chia train/test ở chương 4, còn lại 49.578 review (train 39.662, test 9.916).
 - **Tái lập:** `IMDB_VERSION = 1` (dataset tĩnh).
 
 ## 2. Cấu trúc repository
