@@ -19,5 +19,89 @@
   "n_train": 39662,
   "n_test": 9916,
   "positive_pct_train": 50.18657657203368,
-  "positive_pct_test": 50.19160951996773
+  "positive_pct_test": 50.19160951996773,
+  "length_summary": {
+    "n_words|count": {
+      "negative": 19757.0,
+      "positive": 19905.0
+    },
+    "n_words|mean": {
+      "negative": 229.556,
+      "positive": 232.806
+    },
+    "n_words|std": {
+      "negative": 165.642,
+      "positive": 177.003
+    },
+    "n_words|min": {
+      "negative": 8.0,
+      "positive": 10.0
+    },
+    "n_words|50%": {
+      "negative": 174.0,
+      "positive": 173.0
+    },
+    "n_words|max": {
+      "negative": 1522.0,
+      "positive": 2470.0
+    },
+    "n_chars|count": {
+      "negative": 19757.0,
+      "positive": 19905.0
+    },
+    "n_chars|mean": {
+      "negative": 1294.197,
+      "positive": 1324.288
+    },
+    "n_chars|std": {
+      "negative": 949.522,
+      "positive": 1027.868
+    },
+    "n_chars|min": {
+      "negative": 41.0,
+      "positive": 67.0
+    },
+    "n_chars|50%": {
+      "negative": 973.0,
+      "positive": 971.0
+    },
+    "n_chars|max": {
+      "negative": 8969.0,
+      "positive": 13704.0
+    }
+  },
+  "n_words_skew": 2.167513496654333,
+  "mwu": {
+    "n_words": {
+      "median pos": 173.0,
+      "median neg": 174.0,
+      "U": 194831805.0,
+      "p-value": 0.114431,
+      "rank-biserial": -0.009153,
+      "CI95 thấp": -0.024033,
+      "CI95 cao": 0.001432
+    },
+    "n_chars": {
+      "median pos": 971.0,
+      "median neg": 973.0,
+      "U": 195693919.0,
+      "p-value": 0.410848,
+      "rank-biserial": -0.004768,
+      "CI95 thấp": -0.01892,
+      "CI95 cao": 0.006183
+    },
+    "n_words_nohtml": {
+      "median pos": 171.0,
+      "median neg": 172.0,
+      "U": 194977487.5,
+      "p-value": 0.146834,
+      "rank-biserial": -0.008412,
+      "CI95 thấp": -0.023413,
+      "CI95 cao": 0.002569
+    }
+  },
+  "mwu_words_p": 0.11443091284080947,
+  "mwu_chars_p": 0.4108476432620005,
+  "html_review_pct_train": 58.39342443648833,
+  "html_extra_tokens_mean": 3.9237910189982728
 }
