@@ -308,5 +308,8 @@
   "hapax": 44589,
   "hapax_pct_of_types": 41.253642966184024,
   "top100_coverage_pct": 51.37900104060292,
-  "top1000_coverage_pct": 76.74679988454278
+  "top1000_coverage_pct": 76.74679988454278,
+  "split_overlap": 0,
+  "split_length_mwu_p": 0.9872405425884151,
+  "split_length_rank_biserial": -0.00010366947214657252
 }
