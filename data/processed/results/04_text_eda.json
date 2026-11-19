@@ -1,9 +1,23 @@
 {
   "n_samples": 50000,
-  "n_duplicates": 418,
   "class_counts": {
     "positive": 25000,
     "negative": 25000
   },
-  "n_after_dedup": 49582
+  "n_duplicates_exact": 418,
+  "n_duplicates_normalized": 422,
+  "n_label_conflict_groups": 0,
+  "noise_pct": {
+    "thẻ HTML <br />": 58.4,
+    "URL": 0.404,
+    "@mention": 0.164,
+    "#hashtag": 0.48,
+    "chữ số": 56.01,
+    "ký tự ngoài ASCII": 9.32
+  },
+  "n_after_dedup": 49578,
+  "n_train": 39662,
+  "n_test": 9916,
+  "positive_pct_train": 50.18657657203368,
+  "positive_pct_test": 50.19160951996773
 }
