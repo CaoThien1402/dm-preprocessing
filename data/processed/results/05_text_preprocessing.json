@@ -100,5 +100,65 @@
       }
     }
   },
-  "review_with_rating_pct": 8.678331904593819
+  "review_with_rating_pct": 8.678331904593819,
+  "tokenization": {
+    "word-level (NLTK)": {
+      "|V| (train)": 130522.0,
+      "OOV token (test, %)": 0.710452,
+      "OOV types (test, %)": 25.643144,
+      "độ dài TB / review (train)": 264.936387,
+      "độ dài TB / review (test)": 266.067164
+    },
+    "word-level, chỉ từ có tần suất ≥ 5": {
+      "|V| (train)": 37851.0,
+      "OOV token (test, %)": 1.558339,
+      "OOV types (test, %)": 48.472045,
+      "độ dài TB / review (train)": 264.936387,
+      "độ dài TB / review (test)": 266.067164
+    },
+    "sentence-level (NLTK)": {
+      "|V| (train)": 475126.0,
+      "OOV token (test, %)": 96.722263,
+      "OOV types (test, %)": 98.394684,
+      "độ dài TB / review (train)": 12.334804,
+      "độ dài TB / review (test)": 12.340762
+    },
+    "character-level": {
+      "|V| (train)": 154.0,
+      "OOV token (test, %)": 0.00014,
+      "OOV types (test, %)": 3.846154,
+      "độ dài TB / review (train)": 1286.595255,
+      "độ dài TB / review (test)": 1293.113554
+    },
+    "BPE (30.000, đã chọn)": {
+      "|V| (train)": 30000.0,
+      "OOV token (test, %)": 0.000648,
+      "OOV types (test, %)": NaN,
+      "độ dài TB / review (train)": 278.548081,
+      "độ dài TB / review (test)": 280.272388
+    }
+  },
+  "bpe_sizes": {
+    "BPE 5,000": {
+      "|V| (train)": 5000.0,
+      "OOV token (test, %)": 0.000567,
+      "OOV types (test, %)": NaN,
+      "độ dài TB / review (train)": 318.653194,
+      "độ dài TB / review (test)": 320.345805
+    },
+    "BPE 10,000": {
+      "|V| (train)": 10000.0,
+      "OOV token (test, %)": 0.000608,
+      "OOV types (test, %)": NaN,
+      "độ dài TB / review (train)": 296.83488,
+      "độ dài TB / review (test)": 298.420835
+    },
+    "BPE 30,000": {
+      "|V| (train)": 30000.0,
+      "OOV token (test, %)": 0.000648,
+      "OOV types (test, %)": NaN,
+      "độ dài TB / review (train)": 278.548081,
+      "độ dài TB / review (test)": 280.272388
+    }
+  }
 }
