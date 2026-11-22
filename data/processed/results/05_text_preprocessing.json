@@ -533,5 +533,22 @@
     }
   },
   "base_vocab_size": 99300,
-  "base_tokens": 4823967
+  "base_tokens": 4823967,
+  "final_test_f1": {
+    "văn bản gốc": {
+      "F1 test (Naive Bayes)": 0.849301,
+      "F1 test (Logistic Regression)": 0.898522
+    },
+    "chỉ chuẩn hóa (5.1)": {
+      "F1 test (Naive Bayes)": 0.852476,
+      "F1 test (Logistic Regression)": 0.901129
+    },
+    "pipeline đầy đủ": {
+      "F1 test (Naive Bayes)": 0.862765,
+      "F1 test (Logistic Regression)": 0.900376
+    }
+  },
+  "final_stop_policy": "bỏ stop words, giữ phủ định",
+  "final_stem_method": "không xử lý",
+  "n_clean_empty": 0
 }
