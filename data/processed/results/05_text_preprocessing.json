@@ -160,5 +160,98 @@
       "độ dài TB / review (train)": 278.548081,
       "độ dài TB / review (test)": 280.272388
     }
-  }
+  },
+  "stop_table": {
+    "giữ tất cả (cơ sở)": {
+      "|V| (mọi từ, train)": 99459.0,
+      "|V| (≥ 5 review)": 33034.0,
+      "từ / review TB": 229.68803893,
+      "MI TB (nat)": 0.00010145,
+      "MI TB, nhãn xáo trộn": 1.332e-05,
+      "MI tổng (nat)": 3.3514112
+    },
+    "bỏ stop words, giữ phủ định": {
+      "|V| (mọi từ, train)": 99300.0,
+      "|V| (≥ 5 review)": 32951.0,
+      "từ / review TB": 121.6269225,
+      "MI TB (nat)": 9.849e-05,
+      "MI TB, nhãn xáo trộn": 1.334e-05,
+      "MI tổng (nat)": 3.24548553
+    },
+    "bỏ stop words NLTK": {
+      "|V| (mọi từ, train)": 99263.0,
+      "|V| (≥ 5 review)": 32932.0,
+      "từ / review TB": 118.65725379,
+      "MI TB (nat)": 9.748e-05,
+      "MI TB, nhãn xáo trộn": 1.334e-05,
+      "MI tổng (nat)": 3.21012528
+    }
+  },
+  "stop_nb": {
+    "giữ tất cả (cơ sở)": {
+      "F1 TB": 0.842772,
+      "SD (fold)": 0.004924,
+      "chênh so với cơ sở": 0.0,
+      "t hiệu chỉnh": NaN,
+      "p-value": NaN
+    },
+    "bỏ stop words, giữ phủ định": {
+      "F1 TB": 0.857161,
+      "SD (fold)": 0.004152,
+      "chênh so với cơ sở": 0.01439,
+      "t hiệu chỉnh": 11.074653,
+      "p-value": 0.000378
+    },
+    "bỏ stop words NLTK": {
+      "F1 TB": 0.857823,
+      "SD (fold)": 0.00395,
+      "chênh so với cơ sở": 0.015051,
+      "t hiệu chỉnh": 13.777509,
+      "p-value": 0.000161
+    }
+  },
+  "stop_lr": {
+    "giữ tất cả (cơ sở)": {
+      "F1 TB": 0.89876,
+      "SD (fold)": 0.002419,
+      "chênh so với cơ sở": 0.0,
+      "t hiệu chỉnh": NaN,
+      "p-value": NaN
+    },
+    "bỏ stop words, giữ phủ định": {
+      "F1 TB": 0.900039,
+      "SD (fold)": 0.002673,
+      "chênh so với cơ sở": 0.001279,
+      "t hiệu chỉnh": 0.700808,
+      "p-value": 0.522047
+    },
+    "bỏ stop words NLTK": {
+      "F1 TB": 0.899842,
+      "SD (fold)": 0.002998,
+      "chênh so với cơ sở": 0.001082,
+      "t hiệu chỉnh": 0.65699,
+      "p-value": 0.547067
+    }
+  },
+  "stop_words_mi_share_pct": 4.4865107369799455,
+  "stop_top_mi": {
+    "no": 0.011136,
+    "just": 0.00656,
+    "why": 0.005748,
+    "don": 0.00527,
+    "any": 0.004504,
+    "very": 0.004122,
+    "only": 0.004094,
+    "or": 0.004081,
+    "couldn": 0.003979,
+    "didn": 0.003826
+  },
+  "stop_policy": "bỏ stop words, giữ phủ định",
+  "stop_rule1_choice": "bỏ stop words NLTK",
+  "stop_p_vs_rule1": {
+    "giữ tất cả (cơ sở)": 0.00016083016972182155,
+    "bỏ stop words, giữ phủ định": 0.25736532028450343,
+    "bỏ stop words NLTK": 1.0
+  },
+  "n_stopwords": 198
 }
