@@ -253,5 +253,285 @@
     "bỏ stop words, giữ phủ định": 0.25736532028450343,
     "bỏ stop words NLTK": 1.0
   },
-  "n_stopwords": 198
+  "n_stopwords": 198,
+  "stem_table": {
+    "không xử lý": {
+      "|V'|": 99300.0,
+      "collision rate (%)": 0.0,
+      "token bị đổi (%)": 0.0,
+      "nhóm gộp lớn nhất": 1.0,
+      "số nhóm có ≥ 2 từ": 0.0,
+      "nhóm xung đột cảm xúc": 0.0
+    },
+    "Porter": {
+      "|V'|": 71586.0,
+      "collision rate (%)": 27.909366,
+      "token bị đổi (%)": 45.760015,
+      "nhóm gộp lớn nhất": 27.0,
+      "số nhóm có ≥ 2 từ": 14200.0,
+      "nhóm xung đột cảm xúc": 79.0
+    },
+    "Snowball": {
+      "|V'|": 62364.0,
+      "collision rate (%)": 37.196375,
+      "token bị đổi (%)": 45.224812,
+      "nhóm gộp lớn nhất": 18.0,
+      "số nhóm có ≥ 2 từ": 19031.0,
+      "nhóm xung đột cảm xúc": 82.0
+    },
+    "WordNet (danh từ)": {
+      "|V'|": 90507.0,
+      "collision rate (%)": 8.854985,
+      "token bị đổi (%)": 10.103531,
+      "nhóm gộp lớn nhất": 4.0,
+      "số nhóm có ≥ 2 từ": 8686.0,
+      "nhóm xung đột cảm xúc": 22.0
+    },
+    "WordNet (động từ rồi danh từ)": {
+      "|V'|": 81489.0,
+      "collision rate (%)": 17.936556,
+      "token bị đổi (%)": 22.54976,
+      "nhóm gộp lớn nhất": 7.0,
+      "số nhóm có ≥ 2 từ": 10643.0,
+      "nhóm xung đột cảm xúc": 54.0
+    }
+  },
+  "stem_lr": {
+    "không xử lý": {
+      "F1 TB": 0.900039,
+      "SD (fold)": 0.002673,
+      "chênh so với cơ sở": 0.0,
+      "t hiệu chỉnh": NaN,
+      "p-value": NaN
+    },
+    "Porter": {
+      "F1 TB": 0.897214,
+      "SD (fold)": 0.002308,
+      "chênh so với cơ sở": -0.002825,
+      "t hiệu chỉnh": -1.678413,
+      "p-value": 0.168568
+    },
+    "Snowball": {
+      "F1 TB": 0.897002,
+      "SD (fold)": 0.002953,
+      "chênh so với cơ sở": -0.003037,
+      "t hiệu chỉnh": -1.911706,
+      "p-value": 0.128493
+    },
+    "WordNet (danh từ)": {
+      "F1 TB": 0.898266,
+      "SD (fold)": 0.002228,
+      "chênh so với cơ sở": -0.001773,
+      "t hiệu chỉnh": -1.203901,
+      "p-value": 0.294998
+    },
+    "WordNet (động từ rồi danh từ)": {
+      "F1 TB": 0.896888,
+      "SD (fold)": 0.00195,
+      "chênh so với cơ sở": -0.003151,
+      "t hiệu chỉnh": -2.721032,
+      "p-value": 0.05293
+    }
+  },
+  "stem_method": "không xử lý",
+  "stem_examples": {
+    "không xử lý": {
+      "lớn nhất": [
+        [
+          "one",
+          [
+            "one"
+          ]
+        ],
+        [
+          "reviewers",
+          [
+            "reviewers"
+          ]
+        ]
+      ],
+      "xung đột": []
+    },
+    "Porter": {
+      "lớn nhất": [
+        [
+          "gener",
+          [
+            "general",
+            "generally",
+            "generation",
+            "generous",
+            "generic",
+            "generated"
+          ]
+        ],
+        [
+          "inform",
+          [
+            "information",
+            "informed",
+            "informative",
+            "informs",
+            "inform",
+            "informer"
+          ]
+        ]
+      ],
+      "xung đột": [
+        [
+          "like",
+          10.312,
+          "liked",
+          "like"
+        ],
+        [
+          "make",
+          10.258,
+          "makes",
+          "make"
+        ],
+        [
+          "effect",
+          9.322,
+          "effective",
+          "effects"
+        ]
+      ]
+    },
+    "Snowball": {
+      "lớn nhất": [
+        [
+          "human",
+          [
+            "human",
+            "humans",
+            "humanity",
+            "humane",
+            "humanly",
+            "humanism"
+          ]
+        ],
+        [
+          "anim",
+          [
+            "animation",
+            "animated",
+            "animals",
+            "animal",
+            "anime",
+            "animators"
+          ]
+        ]
+      ],
+      "xung đột": [
+        [
+          "like",
+          10.312,
+          "liked",
+          "like"
+        ],
+        [
+          "make",
+          10.258,
+          "makes",
+          "make"
+        ],
+        [
+          "effect",
+          9.322,
+          "effective",
+          "effects"
+        ]
+      ]
+    },
+    "WordNet (danh từ)": {
+      "lớn nhất": [
+        [
+          "gas",
+          [
+            "gas",
+            "gass",
+            "gases",
+            "gasses"
+          ]
+        ],
+        [
+          "go",
+          [
+            "go",
+            "goes",
+            "gos"
+          ]
+        ]
+      ],
+      "xung đột": [
+        [
+          "make",
+          10.258,
+          "makes",
+          "make"
+        ],
+        [
+          "tell",
+          7.666,
+          "tells",
+          "tell"
+        ],
+        [
+          "give",
+          7.624,
+          "gives",
+          "give"
+        ]
+      ]
+    },
+    "WordNet (động từ rồi danh từ)": {
+      "lớn nhất": [
+        [
+          "star",
+          [
+            "star",
+            "stars",
+            "starring",
+            "starred",
+            "staring",
+            "stares"
+          ]
+        ],
+        [
+          "cop",
+          [
+            "cop",
+            "cops",
+            "coping",
+            "copes",
+            "copped",
+            "copping"
+          ]
+        ]
+      ],
+      "xung đột": [
+        [
+          "like",
+          10.312,
+          "liked",
+          "like"
+        ],
+        [
+          "make",
+          10.258,
+          "makes",
+          "make"
+        ],
+        [
+          "tell",
+          7.666,
+          "tells",
+          "tell"
+        ]
+      ]
+    }
+  },
+  "base_vocab_size": 99300,
+  "base_tokens": 4823967
 }
