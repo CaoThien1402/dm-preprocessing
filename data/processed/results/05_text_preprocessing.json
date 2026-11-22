@@ -1,1 +1,104 @@
-{}
+{
+  "normalization_steps": {
+    "0. văn bản gốc": {
+      "|V|": 380597,
+      "ΔV so với bước trước (%)": NaN,
+      "số từ TB": 231.18683,
+      "số từ trung vị": 173.0,
+      "số ký tự TB": 1309.2985,
+      "số ký tự trung vị": 972.0,
+      "KS số từ": NaN
+    },
+    "1. chữ thường": {
+      "|V|": 339687,
+      "ΔV so với bước trước (%)": -10.7489,
+      "số từ TB": 231.18683,
+      "số từ trung vị": 173.0,
+      "số ký tự TB": 1309.2985,
+      "số ký tự trung vị": 972.0,
+      "KS số từ": 0.0
+    },
+    "2. bỏ HTML": {
+      "|V|": 317911,
+      "ΔV so với bước trước (%)": -6.41061,
+      "số từ TB": 228.89569,
+      "số từ trung vị": 172.0,
+      "số ký tự TB": 1289.08459,
+      "số ký tự trung vị": 958.0,
+      "KS số từ": 0.00739
+    },
+    "3. bỏ URL": {
+      "|V|": 317773,
+      "ΔV so với bước trước (%)": -0.04341,
+      "số từ TB": 228.89204,
+      "số từ trung vị": 172.0,
+      "số ký tự TB": 1288.94831,
+      "số ký tự trung vị": 958.0,
+      "KS số từ": 8e-05
+    },
+    "4. bỏ mention, hashtag": {
+      "|V|": 317673,
+      "ΔV so với bước trước (%)": -0.03147,
+      "số từ TB": 228.88931,
+      "số từ trung vị": 172.0,
+      "số ký tự TB": 1288.92741,
+      "số ký tự trung vị": 958.0,
+      "KS số từ": 8e-05
+    },
+    "5. bỏ ký tự đặc biệt và số (có điều kiện)": {
+      "|V|": 99459,
+      "ΔV so với bước trước (%)": -68.69139,
+      "số từ TB": 229.68804,
+      "số từ trung vị": 172.0,
+      "số ký tự TB": 1289.47552,
+      "số ký tự trung vị": 958.0,
+      "KS số từ": 0.00398
+    },
+    "6. chuẩn hóa khoảng trắng": {
+      "|V|": 99459,
+      "ΔV so với bước trước (%)": 0.0,
+      "số từ TB": 229.68804,
+      "số từ trung vị": 172.0,
+      "số ký tự TB": 1248.99629,
+      "số ký tự trung vị": 927.0,
+      "KS số từ": 0.0
+    }
+  },
+  "vocab_raw": 380597,
+  "vocab_after_normalization": 99459,
+  "digits_experiment": {
+    "LR": {
+      "bỏ mọi chữ số": {
+        "F1 TB": 0.895812,
+        "SD (fold)": 0.003119,
+        "chênh so với cơ sở": 0.0,
+        "t hiệu chỉnh": NaN,
+        "p-value": NaN
+      },
+      "giữ điểm đánh giá (đã chọn)": {
+        "F1 TB": 0.89876,
+        "SD (fold)": 0.002419,
+        "chênh so với cơ sở": 0.002947,
+        "t hiệu chỉnh": 4.633235,
+        "p-value": 0.009783
+      }
+    },
+    "NB": {
+      "bỏ mọi chữ số": {
+        "F1 TB": 0.838687,
+        "SD (fold)": 0.005671,
+        "chênh so với cơ sở": 0.0,
+        "t hiệu chỉnh": NaN,
+        "p-value": NaN
+      },
+      "giữ điểm đánh giá (đã chọn)": {
+        "F1 TB": 0.842772,
+        "SD (fold)": 0.004924,
+        "chênh so với cơ sở": 0.004085,
+        "t hiệu chỉnh": 6.814849,
+        "p-value": 0.002423
+      }
+    }
+  },
+  "review_with_rating_pct": 8.678331904593819
+}
