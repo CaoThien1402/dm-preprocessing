@@ -93,7 +93,8 @@ Phân tích **so sánh** giữa các kỹ thuật, thảo luận, nhận xét ph
 - Dữ liệu giá: kiểm tra cột giá có **điều chỉnh chia tách cổ phiếu** hay không (ví dụ AAPL chia 4:1 ngày 31/08/2020). Nếu chưa điều chỉnh, các bước nhảy giả sẽ làm hỏng kiểm định và bị phát hiện thành dị thường sai. Ghi rõ lựa chọn trong notebook.
 - Bước nặng (t-SNE, cosine giữa các cặp, Sentence Transformer) chạy trên **mẫu phân tầng** `config.TEXT_SAMPLE_SIZE`. Giữ thời gian chạy mỗi notebook hợp lý (mục tiêu < 15 phút trên CPU laptop).
 - Notebook được commit **kèm output** (CI không chạy lại notebook). Chạy lại toàn bộ bằng:
-  `uv run jupyter nbconvert --to notebook --execute --inplace book/0*.ipynb`
+  `uv run jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=-1 book/0*.ipynb`
+  (bắt buộc có cờ timeout: mặc định nbconvert dừng mỗi ô sau 30 giây, mà có ô chạy nhiều phút)
 
 ## 8. Git và GitHub
 
