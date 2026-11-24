@@ -7,31 +7,31 @@
       "số chiều": 32951.0,
       "nnz / review": 96.99969746,
       "sparsity ratio": 0.99705624,
-      "thời gian fit (s)": 6.70630789
+      "thời gian fit (s)": 5.04704499
     },
     "TF-IDF (1-gram)": {
       "số chiều": 32951.0,
       "nnz / review": 96.99969746,
       "sparsity ratio": 0.99705624,
-      "thời gian fit (s)": 6.92411828
+      "thời gian fit (s)": 5.75481868
     },
     "TF-IDF (1-2 gram)": {
       "số chiều": 143441.0,
       "nnz / review": 135.99455426,
       "sparsity ratio": 0.99905191,
-      "thời gian fit (s)": 17.98758006
+      "thời gian fit (s)": 16.58055639
     },
     "TF-IDF (1-3 gram)": {
       "số chiều": 158199.0,
       "nnz / review": 138.97398144,
       "sparsity ratio": 0.99912152,
-      "thời gian fit (s)": 29.48873067
+      "thời gian fit (s)": 21.56836104
     },
     "Word2Vec (trung bình)": {
       "số chiều": 100.0,
       "nnz / review": 100.0,
       "sparsity ratio": 0.0,
-      "thời gian fit (s)": 220.1938045
+      "thời gian fit (s)": 142.36980939
     }
   },
   "w2v_vocab": 36875,
@@ -120,6 +120,185 @@
     "TF-IDF (1-gram)": 0.0024825040994029407,
     "TF-IDF (1-2 gram)": 0.001449694752465447,
     "TF-IDF (1-3 gram)": 0.0013892532235815335,
-    "Word2Vec (trung bình)": 0.07133578509092331
+    "Word2Vec (trung bình)": 0.07133578509092331,
+    "Sentence Transformer": 0.015721064060926437
+  },
+  "st_dim": 384,
+  "st_max_seq_length": 256,
+  "st_truncated_pct": 40.98426784993949,
+  "geometry_with_st": {
+    "BoW (1-gram)": {
+      "cos cùng lớp (TB)": 0.10198107,
+      "cos khác lớp (TB)": 0.09669542,
+      "Δ (TB)": 0.00528565,
+      "Cohen d (TB)": 0.0832154,
+      "SD(Δ) giữa 10 tập": 0.00064296,
+      "SD(d) giữa 10 tập": 0.00998791,
+      "silhouette (nhãn cảm xúc)": 0.00595229
+    },
+    "TF-IDF (1-gram)": {
+      "cos cùng lớp (TB)": 0.02832292,
+      "cos khác lớp (TB)": 0.02593414,
+      "Δ (TB)": 0.00238877,
+      "Cohen d (TB)": 0.12424235,
+      "SD(Δ) giữa 10 tập": 0.00017512,
+      "SD(d) giữa 10 tập": 0.00811457,
+      "silhouette (nhãn cảm xúc)": 0.0024825
+    },
+    "TF-IDF (1-2 gram)": {
+      "cos cùng lớp (TB)": 0.01602391,
+      "cos khác lớp (TB)": 0.0146053,
+      "Δ (TB)": 0.00141861,
+      "Cohen d (TB)": 0.1309283,
+      "SD(Δ) giữa 10 tập": 7.256e-05,
+      "SD(d) giữa 10 tập": 0.00608701,
+      "silhouette (nhãn cảm xúc)": 0.00144969
+    },
+    "TF-IDF (1-3 gram)": {
+      "cos cùng lớp (TB)": 0.01538656,
+      "cos khác lớp (TB)": 0.01402484,
+      "Δ (TB)": 0.00136172,
+      "Cohen d (TB)": 0.13057348,
+      "SD(Δ) giữa 10 tập": 6.566e-05,
+      "SD(d) giữa 10 tập": 0.00574228,
+      "silhouette (nhãn cảm xúc)": 0.00138925
+    },
+    "Word2Vec (trung bình)": {
+      "cos cùng lớp (TB)": 0.92654049,
+      "cos khác lớp (TB)": 0.92074907,
+      "Δ (TB)": 0.00579142,
+      "Cohen d (TB)": 0.19049478,
+      "SD(Δ) giữa 10 tập": 0.00046859,
+      "SD(d) giữa 10 tập": 0.0159507,
+      "silhouette (nhãn cảm xúc)": 0.07133579
+    },
+    "Sentence Transformer": {
+      "cos cùng lớp (TB)": 0.29775718,
+      "cos khác lớp (TB)": 0.28698358,
+      "Δ (TB)": 0.01077358,
+      "Cohen d (TB)": 0.10160585,
+      "SD(Δ) giữa 10 tập": 0.0013928,
+      "SD(d) giữa 10 tập": 0.01308463,
+      "silhouette (nhãn cảm xúc)": 0.01572106
+    }
+  },
+  "kmeans": {
+    "TF-IDF (1-gram)": {
+      "silhouette của cụm K-Means": 0.00252089,
+      "silhouette của nhãn cảm xúc": 0.0024825,
+      "ARI so với nhãn": 0.03510159,
+      "độ chính xác ghép cụm": 0.59378782
+    },
+    "TF-IDF (1-2 gram)": {
+      "silhouette của cụm K-Means": 0.00247167,
+      "silhouette của nhãn cảm xúc": 0.00144969,
+      "ARI so với nhãn": 0.03486855,
+      "độ chính xác ghép cụm": 0.59348528
+    },
+    "Sentence Transformer": {
+      "silhouette của cụm K-Means": 0.0526055,
+      "silhouette của nhãn cảm xúc": 0.01572106,
+      "ARI so với nhãn": 0.01708889,
+      "độ chính xác ghép cụm": 0.56555063
+    }
+  },
+  "svm_table": {
+    "BoW (1-gram)": {
+      "C (CV)": 0.01,
+      "F1 CV (10k)": 0.87159237,
+      "F1 test": 0.8780004,
+      "accuracy test": 0.87595805
+    },
+    "TF-IDF (1-gram)": {
+      "C (CV)": 0.1,
+      "F1 CV (10k)": 0.88184361,
+      "F1 test": 0.88538795,
+      "accuracy test": 0.88261396
+    },
+    "TF-IDF (1-2 gram)": {
+      "C (CV)": 1.0,
+      "F1 CV (10k)": 0.89197604,
+      "F1 test": 0.89414101,
+      "accuracy test": 0.89249697
+    },
+    "TF-IDF (1-3 gram)": {
+      "C (CV)": 1.0,
+      "F1 CV (10k)": 0.89136748,
+      "F1 test": 0.89491458,
+      "accuracy test": 0.89330375
+    },
+    "Word2Vec (trung bình)": {
+      "C (CV)": 1.0,
+      "F1 CV (10k)": 0.88274233,
+      "F1 test": 0.88048048,
+      "accuracy test": 0.87958854
+    },
+    "Sentence Transformer": {
+      "C (CV)": 1.0,
+      "F1 CV (10k)": 0.81290728,
+      "F1 test": 0.81793614,
+      "accuracy test": 0.8165591
+    },
+    "TF-IDF (1-gram), toàn bộ train (39662)": {
+      "C (CV)": 0.1,
+      "F1 CV (10k)": 0.90141994,
+      "F1 test": 0.90125531,
+      "accuracy test": 0.89925373
+    },
+    "TF-IDF (1-2 gram), toàn bộ train (39662)": {
+      "C (CV)": 1.0,
+      "F1 CV (10k)": 0.91278724,
+      "F1 test": 0.91291771,
+      "accuracy test": 0.91196047
+    }
+  },
+  "mcnemar": {
+    "Sentence Transformer so với TF-IDF (1-gram)": {
+      "b (A đúng, B sai)": 509.0,
+      "c (A sai, B đúng)": 1164.0,
+      "p-value": 0.0
+    },
+    "Sentence Transformer so với TF-IDF (1-2 gram)": {
+      "b (A đúng, B sai)": 461.0,
+      "c (A sai, B đúng)": 1214.0,
+      "p-value": 0.0
+    },
+    "TF-IDF (1-2 gram) so với TF-IDF (1-gram)": {
+      "b (A đúng, B sai)": 256.0,
+      "c (A sai, B đúng)": 158.0,
+      "p-value": 1.68e-06
+    }
+  },
+  "truncation_split": {
+    "không bị cắt (≤ 256 token)": {
+      "số review": 5852.0,
+      "F1 TF-IDF (1-gram)": 0.8873999,
+      "F1 TF-IDF (1-2 gram)": 0.89676781,
+      "F1 Sentence Transformer": 0.84750292,
+      "F1 TF-IDF (1-gram) trừ F1 Sentence Transformer": 0.03989698,
+      "McNemar p (ST so với TF-IDF 1-gram)": 0.0
+    },
+    "bị cắt (> 256 token)": {
+      "số review": 4064.0,
+      "F1 TF-IDF (1-gram)": 0.88233837,
+      "F1 TF-IDF (1-2 gram)": 0.89016475,
+      "F1 Sentence Transformer": 0.77372627,
+      "F1 TF-IDF (1-gram) trừ F1 Sentence Transformer": 0.1086121,
+      "McNemar p (ST so với TF-IDF 1-gram)": 0.0
+    }
+  },
+  "demo_similarity": {
+    "good so với not good": {
+      "TF-IDF (1-gram)": 0.851713,
+      "Sentence Transformer": 0.819432
+    },
+    "good so với great": {
+      "TF-IDF (1-gram)": 0.320021,
+      "Sentence Transformer": 0.905489
+    },
+    "good so với terrible": {
+      "TF-IDF (1-gram)": 0.214295,
+      "Sentence Transformer": 0.706205
+    }
   }
 }
