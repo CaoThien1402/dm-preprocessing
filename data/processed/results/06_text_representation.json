@@ -1,1 +1,76 @@
-{}
+{
+  "n_train": 39662,
+  "n_test": 9916,
+  "n_labeled_subset": 10000,
+  "rep_table": {
+    "BoW (1-gram)": {
+      "số chiều": 32951.0,
+      "nnz / review": 96.99969746,
+      "sparsity ratio": 0.99705624,
+      "thời gian fit (s)": 7.09655952
+    },
+    "TF-IDF (1-gram)": {
+      "số chiều": 32951.0,
+      "nnz / review": 96.99969746,
+      "sparsity ratio": 0.99705624,
+      "thời gian fit (s)": 7.52788997
+    },
+    "TF-IDF (1-2 gram)": {
+      "số chiều": 143441.0,
+      "nnz / review": 135.99455426,
+      "sparsity ratio": 0.99905191,
+      "thời gian fit (s)": 19.44300389
+    },
+    "TF-IDF (1-3 gram)": {
+      "số chiều": 158199.0,
+      "nnz / review": 138.97398144,
+      "sparsity ratio": 0.99912152,
+      "thời gian fit (s)": 32.85968494
+    },
+    "Word2Vec (trung bình)": {
+      "số chiều": 100.0,
+      "nnz / review": 100.0,
+      "sparsity ratio": 0.0,
+      "thời gian fit (s)": 249.26698661
+    }
+  },
+  "w2v_vocab": 36875,
+  "w2v_zero_docs_test": 0,
+  "w2v_neighbors": {
+    "good": [
+      "decent",
+      "great",
+      "bad",
+      "downsides",
+      "godawful"
+    ],
+    "bad": [
+      "terrible",
+      "awful",
+      "horrible",
+      "lousy",
+      "good"
+    ],
+    "terrible": [
+      "horrible",
+      "awful",
+      "horrendous",
+      "abysmal",
+      "lousy"
+    ],
+    "boring": [
+      "tedious",
+      "dull",
+      "uneventful",
+      "pointless",
+      "uninteresting"
+    ],
+    "excellent": [
+      "outstanding",
+      "superb",
+      "terrific",
+      "fantastic",
+      "great"
+    ]
+  }
+}
