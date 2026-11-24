@@ -7,31 +7,31 @@
       "số chiều": 32951.0,
       "nnz / review": 96.99969746,
       "sparsity ratio": 0.99705624,
-      "thời gian fit (s)": 7.09655952
+      "thời gian fit (s)": 6.34998417
     },
     "TF-IDF (1-gram)": {
       "số chiều": 32951.0,
       "nnz / review": 96.99969746,
       "sparsity ratio": 0.99705624,
-      "thời gian fit (s)": 7.52788997
+      "thời gian fit (s)": 7.04920053
     },
     "TF-IDF (1-2 gram)": {
       "số chiều": 143441.0,
       "nnz / review": 135.99455426,
       "sparsity ratio": 0.99905191,
-      "thời gian fit (s)": 19.44300389
+      "thời gian fit (s)": 17.71199393
     },
     "TF-IDF (1-3 gram)": {
       "số chiều": 158199.0,
       "nnz / review": 138.97398144,
       "sparsity ratio": 0.99912152,
-      "thời gian fit (s)": 32.85968494
+      "thời gian fit (s)": 28.41150641
     },
     "Word2Vec (trung bình)": {
       "số chiều": 100.0,
       "nnz / review": 100.0,
       "sparsity ratio": 0.0,
-      "thời gian fit (s)": 249.26698661
+      "thời gian fit (s)": 217.0184145
     }
   },
   "w2v_vocab": 36875,
@@ -72,5 +72,47 @@
       "fantastic",
       "great"
     ]
+  },
+  "cosine_table": {
+    "BoW (1-gram)": {
+      "cos cùng lớp (TB)": 0.10198107,
+      "cos khác lớp (TB)": 0.09669542,
+      "Δ (TB)": 0.00528565,
+      "Cohen d (TB)": 0.0832154,
+      "SD(Δ) giữa 10 tập": 0.00064296,
+      "SD(d) giữa 10 tập": 0.00998791
+    },
+    "TF-IDF (1-gram)": {
+      "cos cùng lớp (TB)": 0.02832292,
+      "cos khác lớp (TB)": 0.02593414,
+      "Δ (TB)": 0.00238877,
+      "Cohen d (TB)": 0.12424235,
+      "SD(Δ) giữa 10 tập": 0.00017512,
+      "SD(d) giữa 10 tập": 0.00811457
+    },
+    "TF-IDF (1-2 gram)": {
+      "cos cùng lớp (TB)": 0.01602391,
+      "cos khác lớp (TB)": 0.0146053,
+      "Δ (TB)": 0.00141861,
+      "Cohen d (TB)": 0.1309283,
+      "SD(Δ) giữa 10 tập": 7.256e-05,
+      "SD(d) giữa 10 tập": 0.00608701
+    },
+    "TF-IDF (1-3 gram)": {
+      "cos cùng lớp (TB)": 0.01538656,
+      "cos khác lớp (TB)": 0.01402484,
+      "Δ (TB)": 0.00136172,
+      "Cohen d (TB)": 0.13057348,
+      "SD(Δ) giữa 10 tập": 6.566e-05,
+      "SD(d) giữa 10 tập": 0.00574228
+    },
+    "Word2Vec (trung bình)": {
+      "cos cùng lớp (TB)": 0.92654049,
+      "cos khác lớp (TB)": 0.92074907,
+      "Δ (TB)": 0.00579142,
+      "Cohen d (TB)": 0.19049478,
+      "SD(Δ) giữa 10 tập": 0.00046859,
+      "SD(d) giữa 10 tập": 0.0159507
+    }
   }
 }
